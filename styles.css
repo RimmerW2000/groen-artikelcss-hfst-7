@@ -1,0 +1,51 @@
+body {
+    font-family: "Lucida Grande", "serif";
+    background-color: hsl(74, 95%, 93%);
+}
+
+h1 {
+    padding: 16px;
+    background-color: hsl(63, 56%, 38%);
+    color: hsl(0, 0%, 100%);
+    border: 3px dashed hsl(63, 56%, 10%);
+    height: 80px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+main {
+    position: relative;
+    border: 3px double hsl(63, 56%, 10%);
+    margin-top: 15px;
+    padding: 15px;
+
+}
+
+article {
+    border: 2px solid hsl(63, 56%, 38%);
+    background-color: hsl(63, 56%, 80%);
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 16px;
+    padding: 16px;
+}
+.circle-one,
+.circle-two{
+    height: 60px;
+    width: 60px;
+    background-color: hsl(23, 100%, 65%);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle-one{
+    box-shadow: 2px 2px 5px	hsl(0, 0%, 56%);
+}
+.circle-two{
+    box-shadow: 5px 2px 2px hsl(0,0%, 20%);
+}
+
+.circle-one + .circle-two{
+    margin-left: 20px;
+}
